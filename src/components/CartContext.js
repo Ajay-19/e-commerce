@@ -12,9 +12,16 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (item) => {
-    setCartItems((prevItems) =>
-      prevItems.filter((cartItem) => cartItem.id !== item.id)
-    );
+    setCartItems((prevItems) => {
+      const itemIndex = prevItems.findIndex(cartItem => cartItem.id === item.id);
+      if (itemIndex >= 0) {
+        const updatedItems = [...prevItems];
+        // Remove the specific item instance without affecting others
+        updatedItems.splice(itemIndex, 1); // Remove one instance
+        return updatedItems;
+      }
+      return prevItems; // Return unchanged if the item is not found
+    });
   };
 
   const clearCart = () => {
