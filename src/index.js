@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { CartProvider } from './components/CartContext';
 import Checkout from './components/Checkout';
 import OrderSummary from './components/OrderSummary';
+import "./index.css"
 
 
 
