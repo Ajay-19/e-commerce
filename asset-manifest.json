@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ajay-19/e-commerce/static/css/main.647e0708.css",
+    "main.js": "/Ajay-19/e-commerce/static/js/main.f84bdca2.js",
+    "index.html": "/Ajay-19/e-commerce/index.html",
+    "main.647e0708.css.map": "/Ajay-19/e-commerce/static/css/main.647e0708.css.map",
+    "main.f84bdca2.js.map": "/Ajay-19/e-commerce/static/js/main.f84bdca2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.647e0708.css",
+    "static/js/main.f84bdca2.js"
+  ]
+}
